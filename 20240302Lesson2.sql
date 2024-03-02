@@ -1,9 +1,11 @@
-CREATE TABLE IF NOT EXISTS artists(
-	id SERIAL PRIMARY KEY,
-	name VARCHAR(100)
+CREATE TABLE IF NOT EXISTS city(
+	id SERIAL,
+	name VARCHAR(100),
+	population INT,
+	PRIMARY KEY(id) 
 );
 
 SELECT *
-FROM artists;
+FROM city;
 
 DROP TABLE artists;
