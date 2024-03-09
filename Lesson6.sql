@@ -26,3 +26,17 @@ SELECT name AS 姓名, major AS 主修 from student;
 SELECT * FROM student ORDER BY score DESC;
 SELECT * FROM student ORDER BY score DESC LIMIT 3;
 SELECT * FROM student ORDER BY score ASC LIMIT 2;
+
+SELECT * FROM student WHERE major = '英語3' ORDER BY SCORE ASC LIMIT 1;
+SELECT * FROM student WHERE major = '英語4' AND SCORE >10;
+SELECT * FROM student WHERE major = '英語4' OR SCORE >10;
+
+SELECT * FROM student WHERE major = '英語5' OR major = '英語6' OR major = '英語7';
+SELECT * FROM student WHERE major IN('英語5','英語6','英語7') ;
+
+SELECT * FROM student WHERE SCORE >=10 AND SCORE <=100;
+SELECT * FROM student WHERE SCORE BETWEEN 10 AND 100;
+
+SELECT * FROM student WHERE NOT name = '小4';
+SELECT * FROM student WHERE name like '小%';
+SELECT * FROM student WHERE name like '%小%';
